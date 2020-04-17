@@ -16,6 +16,7 @@ The cells can be changed by using either Cell.flip() or Cell.setValue()
 Students have to complete two functions:
 
 countNeighbours()
+
     This will receive cells (the 2D array) as a parameter.
     It should use its own position ( held in self.row and self,col ) to find its neighbours
     it should return a count of the number of live cells (Cells where the .value is 1)
@@ -23,6 +24,7 @@ countNeighbours()
     Look out for Index Errors when dealing with cells at the edges!
     
 simulate()
+
     This will require a new grid to hold the temporary values, calculating every one before updating the cells
     This is important, because if they change each cells immediately after calculating the new value
     they will get a different type of action.
@@ -36,5 +38,5 @@ simulate()
     The Simulate function contains a callback which will make the function repeat until the Stop button is pressed.
     
 Possible Extensions:
-Create a Clear All Button
-Create a Save State / Load state button
+* Create a Clear All Button
+* Create a Save State / Load state button
