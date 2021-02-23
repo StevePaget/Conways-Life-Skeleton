@@ -24,7 +24,7 @@ class Cell():
         # remember not to count the cell itself
         # and watch out for Index errors caused by looking outside the range of the grid
         # minimum row/column should be zero
-        # maximum row/column should be len(cells)
+        # maximum row/column should be len(cells)-1
         return neighbourcount
 
 
