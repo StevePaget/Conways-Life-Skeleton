@@ -22,9 +22,7 @@ class Cell():
         neighbourcount = 0
         # this should look through all neighbours and count how many live cells there are
         # remember not to count the cell itself
-        # and watch out for Index errors caused by looking outside the range of the grid
-        # minimum row/column should be zero
-        # maximum row/column should be len(cells)-1
+        # At the edge of the board it should *wrap around* and look at cells on the opposite side
         return neighbourcount
 
 
