@@ -6,6 +6,7 @@ class Cell():
         self.row = row
         self.col = col
         self.id = id
+        self.oldvalue = 0
         self.value = 0
         self.board = board
         self.colours = ["white", "black"]
@@ -16,7 +17,9 @@ class Cell():
 
     def setValue(self, value):
         self.value = value
-        self.board.itemconfig(self.id, fill=self.colours[self.value])
+        if self.value != self.oldvalue:
+            self.board.itemconfig(self.id, fill=self.colours[self.value])
+        self.oldvalue = self.value
 
     def countNeighbours(self, cells):
         neighbourcount = 0
